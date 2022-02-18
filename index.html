@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 class="text-center mt-6 font-bold text-5xl text-red-900">Let's Check My Account</h1>
-    <main class="mt-8">
-        <div class=" grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
-            <div class="bg-blue-400 p-8 rounded text-center">
-                <h3 class="text-2xl">Deposite</h3>
+    <main class="mt-8 respo">
+        <div class=" grid grid-cols-1 md:grid-cols-3 gap-4 w-3/4 mx-auto text-white respo  ">
+            <div class="bg-blue-400 p-8 rounded text-center respo grid ">
+                <h3 class="text-2xl respo">Deposite</h3>
                 <h2 class="text-4xl">$<span id="deposit-total">00</span> </h2>
             </div>
 
-            <div class="bg-orange-300 p-8 rounded text-center">
+            <div class="bg-orange-300 p-8 rounded text-center ">
                 <h3 class="text-2xl">Withdraw</h3>
                 <h2 class="text-4xl">$<span id="withdraw-total">00</span></h2>
             </div>
 
-            <div class="bg-red-400 p-8 rounded text-center">
+            <div class="bg-red-400 p-8 rounded text-center ">
                 <h3 class="text-2xl">Balance</h3>
                 <h2 class="text-4xl">$<span id="balance-total">1200</span> </h2>
             </div>
@@ -29,7 +30,7 @@
         </div>
         <!-- Deposit -->
         <section class="mt-8">
-            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+            <div class="grid grid grid-cols-1 md:grid-cols-2 gap-4 w-3/4 mx-auto">
                 <div class="bg-red-100 rounded p-6">
                     <h2 class="text-3xl">Please Deposit</h2>
                     <input id="user-deposit" class="border-slate-900 rounded block mt-2 w-3/6 p-2 " type="email" placeholder="Please give amount of money">
